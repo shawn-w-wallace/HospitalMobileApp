@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SymptomNavigator_Placeholder">
+
+    <!-- placeholder mockup -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/patientsvisit_sub" />
+
+    <!-- top buttons -->
+    <LinearLayout
+        android:id="@+id/buttonstop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/texttop"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- home button -->
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/home"
+            app:layout_constraintBottom_toTopOf="@+id/bills"
+            app:layout_constraintEnd_toStartOf="@+id/doctors"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- doctors button -->
+        <ImageButton
+            android:id="@+id/doctors"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/doctor"
+            app:layout_constraintBottom_toTopOf="@+id/email"
+            app:layout_constraintEnd_toStartOf="@+id/services" />
+
+        <!-- services button -->
+        <ImageButton
+            android:id="@+id/services"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/services"
+            app:layout_constraintBottom_toTopOf="@+id/about"
+            app:layout_constraintEnd_toStartOf="@+id/visit" />
+
+        <!-- visit button -->
+        <ImageButton
+            android:id="@+id/visit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/visit"
+            app:layout_constraintBottom_toTopOf="@+id/careers"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </LinearLayout>
+
+    <!-- bottom buttons -->
+    <LinearLayout
+        android:id="@+id/buttonsbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- bills button -->
+        <ImageButton
+            android:id="@+id/bills"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/bills"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/email"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- email button -->
+        <ImageButton
+            android:id="@+id/email"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/email"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/about" />
+
+        <!-- about button -->
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/about"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/careers" />
+
+        <!-- careers button -->
+        <ImageButton
+            android:id="@+id/careers"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/careers"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </LinearLayout>
+
+    <!-- top buttons text -->
+    <LinearLayout
+        android:id="@+id/texttop"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsbottom"
+        tools:layout_editor_absoluteX="16dp">
+
+        <!-- home text -->
+        <TextView
+            android:id="@+id/hometext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <!-- doctors text -->
+        <TextView
+            android:id="@+id/doctorstext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Doctors"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <!-- services text -->
+        <TextView
+            android:id="@+id/servicestext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Services"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <!-- visit text-->
+        <TextView
+            android:id="@+id/Visit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Visit"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- bottom buttons text -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- bills text -->
+        <TextView
+            android:id="@+id/billstext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Bills"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <!-- email text -->
+        <TextView
+            android:id="@+id/emailtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <!-- about text -->
+        <TextView
+            android:id="@+id/abouttext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="About"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <!-- careers text -->
+        <TextView
+            android:id="@+id/careerstext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Careers"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
